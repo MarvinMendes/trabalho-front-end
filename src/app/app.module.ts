@@ -14,6 +14,7 @@ import { ProfessorDetalheComponent } from './gerencia-professor/professor-detalh
 import { ProfessorModule } from './gerencia-professor/professor.module';
 import { SalasFormComponent } from './gerencia-salas/salas-form/salas-form.component';
 import { GerenciaSalasModule } from './gerencia-salas/gerencia-salas.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { GerenciaSalasModule } from './gerencia-salas/gerencia-salas.module';
     //GerenciaAlunoComponent,
     //GerenciaSalasComponent,
     HomeComponent,
+    LoginComponent,
     //ProfessorDetalheComponent
   ],
   imports: [

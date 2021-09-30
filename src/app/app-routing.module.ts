@@ -4,13 +4,15 @@ import { GerenciaAlunoComponent } from './gerencia-aluno/gerencia-aluno.componen
 import { GerenciaProfessorComponent } from './gerencia-professor/gerencia-professor.component';
 import { GerenciaSalasComponent } from './gerencia-salas/gerencia-salas.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [ 
   {path: "", component: HomeComponent},
   {path: 'home', component: HomeComponent},
   //{path: 'professores', component: GerenciaProfessorComponent },
   //{path: 'alunos', component: GerenciaAlunoComponent},
-  {path: 'salas', component: GerenciaSalasComponent}      
+  //{path: 'salas', component: GerenciaSalasComponent}
+  {path: 'login', component: LoginComponent}
 ];
 
 @NgModule({
