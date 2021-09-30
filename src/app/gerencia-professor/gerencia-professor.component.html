@@ -1,0 +1,33 @@
+<div class="container">
+    <h2 class="titulo">Cadastro de professores</h2>
+        <form>
+                <div class="formulario-professores">
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-6">
+                        <label  class="form-label">Nome</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                <div class="col col-lg-6">
+                    <label class="form-label">Numero de cadastro</label>
+                    <input type="text" class="form-control">
+                </div>
+                </div> 
+                <div class="row justify-content-md-center"  >
+                    <div class="col col-lg-6">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+                  <div class="botao">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>  
+                <div class="botao">
+                    <button type="button" [routerLink]="['edit']" class="btn btn-info">Editar</button>
+                </div>
+             </div>
+
+         </form>
+            <router-outlet></router-outlet>
+</div>

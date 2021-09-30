@@ -1,0 +1,30 @@
+
+<h2>Ocupação da sala</h2>
+<br>
+<div class="botao">
+    <button type="button" [routerLink]="['/alunos']" class="btn btn-info">Adicionar</button>
+</div>
+<table class="table table-striped" >
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">Matrícula</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let aluno of alunos">
+        <th scope="row"> {{ aluno.id }}  </th>
+        <td> {{ aluno.nome }} </td>
+        <td>{{ aluno.email }}</td>
+        <td>{{ aluno.numero }}</td>
+        <td>
+            <button type="button" [routerLink]="['/edit']" class="btn btn-warning">Remover</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <router-outlet></router-outlet>
+   
+

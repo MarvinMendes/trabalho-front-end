@@ -1,0 +1,26 @@
+<form>
+    <div class="container">
+        <h2 class="titulo">Cadastro de Salas</h2>
+        <div class="formulario-salas">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-8">
+                <label  class="form-label">Número da sala</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-8">
+                <label class="form-label">Capacidade total</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+     </div>
+     <div class="botao">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+ </div>
+  </div>
+</form>
+<div class="botao">
+    <button type="button" [routerLink]="['/edit']" class="btn btn-info">Editar</button>
+</div>
